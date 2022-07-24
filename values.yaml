@@ -6,7 +6,7 @@ replicaCount: 2
 
 cluster:
   image:
-    repository: ipfs/ipfs-cluster
+    repository: registry.gitlab.com/i-coin/ipfs-cluster:latest
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: ""
