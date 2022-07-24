@@ -46,7 +46,7 @@ spec:
             value: /ip4/0.0.0.0/tcp/9094 # Expose API
           - name: CLUSTER_MONITORPINGINTERVAL
             value: 2s # Speed up peer discovery
-        image: "{{ $.Values.cluster.image.repository }}:{{ $.Values.cluster.image.tag | default $.Chart.AppVersion }}"
+        image: "{{ $.Values.cluster.image.repository }}:latest
         ports:
         - containerPort: 9096
           name: p2p
